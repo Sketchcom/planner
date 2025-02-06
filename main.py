@@ -74,7 +74,7 @@ def login():
     # App Header
     col1, col2, col3 = st.columns([1.6, 1, 1])
     with col2:
-        logo = Image.open("logo/sketch.png")
+        logo = Image.open("sketch.png")
         st.image(logo, width=100)
 
     # Centered title with custom font sizes using HTML
@@ -99,7 +99,7 @@ def main_app():
     # App Header
     col1, col2, col3 = st.columns([1.6, 1, 1])
     with col2:
-        logo = Image.open("logo/sketch.png")
+        logo = Image.open("sketch.png")
         st.image(logo, width=100)
 
     # Centered title with custom font sizes using HTML
@@ -246,7 +246,7 @@ def main_app():
         if st.button("Generate PDF and CSV"):
             class PDF(FPDF):
                 def header(self):
-                    logo_path = "logo/sketch.png"
+                    logo_path = "sketch.png"
                     self.image(logo_path, 5, 4, 16)
                     self.set_font("Arial", style="B", size=14)
 
